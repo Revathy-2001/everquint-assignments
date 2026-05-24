@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Water Tank — Trapped Rain Water</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <h1>Water Tank</h1>
+        <p class="subtitle">Compute and visualize trapped water between blocks.</p>
+      </header>
+
+      <section class="panel controls">
+        <label for="heights-input">Block heights (comma-separated)</label>
+        <div class="row">
+          <input
+            id="heights-input"
+            type="text"
+            value="0,4,0,0,0,6,0,6,4,0"
+            spellcheck="false"
+          />
+          <button type="button" id="compute-btn">Compute</button>
+        </div>
+        <p id="error-msg" class="error" hidden></p>
+        <p class="result">
+          Total trapped water:
+          <strong id="total-water">—</strong>
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>Input view</h2>
+        <p class="hint">Yellow = blocks, blue = trapped water</p>
+        <div id="input-chart" class="chart" aria-label="Blocks with water"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Water only</h2>
+        <div id="water-chart" class="chart" aria-label="Trapped water only"></div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Max Profit — Building Schedule</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <h1>Max Profit</h1>
+        <p class="subtitle">
+          Maximize earnings by building Theatres, Pubs, and Commercial Parks in sequence.
+        </p>
+      </header>
+
+      <section class="panel controls">
+        <label for="time-input">Total time units (n)</label>
+        <div class="row">
+          <input id="time-input" type="number" min="0" step="1" value="13" />
+          <button type="button" id="compute-btn">Compute</button>
+        </div>
+        <p id="error-msg" class="error" hidden></p>
+      </section>
+
+      <section class="panel" id="result-panel" hidden>
+        <p class="earnings">
+          Maximum earnings:
+          <strong id="max-earnings">$0</strong>
+        </p>
+        <div id="solutions"></div>
+      </section>
+
+      <section class="panel reference">
+        <h2>Building reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Build time</th>
+              <th>Earnings / unit (after built)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Theatre (T)</td>
+              <td>5</td>
+              <td>$1,500</td>
+            </tr>
+            <tr>
+              <td>Pub (P)</td>
+              <td>4</td>
+              <td>$1,000</td>
+            </tr>
+            <tr>
+              <td>Commercial Park (C)</td>
+              <td>10</td>
+              <td>$3,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
