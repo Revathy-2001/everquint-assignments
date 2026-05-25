@@ -19,6 +19,7 @@ Submission for the Ever Quint hiring assignment (Step 1).
 - Enter total time units `n`.
 - Finds maximum earnings from sequential Theatre / Pub / Commercial Park builds.
 - Shows building counts `T`, `P`, `C` and all optimal plans when ties exist.
+- Verified examples: `n=7` → $3,000 (T:1 or P:1); `n=8` → $4,500 (T:1); `n=13` → $16,500 (T:2); `n=49` → $324,000 (T:9 or T:8+P:2).
 
 ## Tech
 
